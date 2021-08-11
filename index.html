@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5/15/3/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="shortcut icon" type="image/png" href="img/housee.png">
+    <title>MilHouse Rebuild V.22 (GitHub)</title>
+</head>
+<body>
+
+    <!-- Web Loader -->
+
+    
+    <div class="loader_bg">
+        <h2 class="animate loader">MILH<i class="fa fa-home" aria-hidden="true"></i>USE</h2>
+    </div>
+
+
+
+    <!--============ Web Header ============-->
+<div class="headerfont">
+    <header>
+        <div class="hcontainer">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu" onclick="minibagmenucloseToggle()">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-mil"><span class="logo-mobile">
+                            <span class="chrlog">MILH<i class="fa fa-home" aria-hidden="true"></i>USE</span>
+                            <span class="ioslog">MILHOUSE</span></span></a> <!-- mil -> apple -->
+                    </li>
+
+                    <!--==== Mini bag Menu ====-->
+
+                    <li class="nav-item operation">
+                        <p onclick="minibagmenuToggle()" class="nav-link nav-link-bag"></p>
+
+                        <div class="minibagmenu">
+                            <h3>Ընթացիք Շինարարություններ<br>
+                                <span>Մատչելի բնակարաններ <br class="minibagbr">շահավետ պայմաններով<img class="imgmap" src="img/housemp.png"></span></h3>
+                            <ul>
+                                <li><img src="img/plot3.png"><a href="#">Թևոսյան 3/1 (4-րդ Մասիվ)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Ավան 4-րդ փողոց 13/2 (Ավան)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Մինսկի 21 (8-րդ Մասիվ)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Կոմիտաս 49/12 (Կոմիտաս)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Նիզամի 20/4 (3-րդ Մաս)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="#home" class="mil-link nav-link-mil">
+                            <span class="logo">
+                                <span class="decor">⟨︎</span>M<i class="fa fa-home" aria-hidden="true"></i><span class="decor">⟩︎</span>
+                            </span>
+                        </a> <!-- mil -> apple --> 
+                    </li>
+                    <li class="nav-item effect-one"><a href="#home" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Home</a></li>
+                    <li class="nav-item effect-one"><a href="#about" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">About</a></li>
+                    <li class="nav-item effect-one"><a href="#services" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Services</a></li>
+                    <li class="nav-item effect-one"><a href="#work" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Work</a></li>
+                    <li class="nav-item effect-one"><a href="#testimonial" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Testimonial</a></li>
+                    <li class="nav-item effect-one"><a href="#contact" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Contact</a></li>
+                    <li class="nav-item effect-one"><a href="#support" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Support</a></li>
+
+                    <li li class="nav-item mob_lang" onclick="moblangmenuToggle()">
+                        <div class="nav-link langcenter"><img src="img/translate.png"><span class="mblg_txt_hide"> Language</span> AM</div>
+
+                        <div class="moblangmenu">
+                            <ul class="nav-list nav-list">
+                                <li><a class="ltxru" href="#">RU</a><img class="mblg_txt_hide" src="https://www.countryflags.io/ru/shiny/32.png"></li>
+                                <li class="gictop"></li>
+                                <li><a href="#">US</a><img class="imgus mblg_txt_hide" src="https://www.countryflags.io/us/shiny/32.png"></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nullpool"></li> <!-- Datark taracutyun scrolli hamar -->
+
+                    <!--==== Bag Menu ====-->
+
+                    <li class="nav-item nav-item-hidden activity">
+                        <p onclick="bagmenuToggle()" class="nav-link nav-link-bag"></p>
+
+                        <div class="bagmenu">
+                            <h3>Ընթացիք Շինարարություններ<br>
+                                <span>Մատչելի բնակարաններ շահավետ պայմաններով <img class="imgmap" src="img/housemp.png"> </span></h3>
+                            <ul>
+                                <li><img src="img/plot3.png"><a href="#">Թևոսյան 3/1 (4-րդ Մասիվ)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Ավան 4-րդ փողոց 13/2 (Ավան)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Մինսկի 21 (8-րդ Մասիվ)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Կոմիտաս 49/12 (Կոմիտաս)</a></li>
+                                <li><img src="img/plot3.png"><a href="#">Նիզամի 20/4 (3-րդ Մաս)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--==== Translate Menu ====-->
+
+                    <li class="nav-item nav-item-hidden action">
+                        <p onclick="langmenuToggle()" class="nav-link nav-link-lang"></p>
+
+                        <div class="langmenu">
+                            <h3>Select Language<br>
+                            <span>Default AM <img class="imgam" src="https://www.countryflags.io/am/shiny/24.png"> </span></h3>
+                            <ul>
+                                <li><a href="#">Russian RU</a><img class="imgru" src="https://www.countryflags.io/ru/shiny/32.png"></li>
+                                <li><a href="#">English US</a><img src="https://www.countryflags.io/us/shiny/32.png"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+</div>
+    <!--============ Header end ============-->
+
+<div class="main">
+
+    <div class="amenaskizb" id="home"></div>    <!--================ preSection 1 ================-->
+
+    <!--<section class="hero milhouse-banner">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading">MilHouse Buildings</h2>
+                <h3 class="title-sub-heading">Pro cameras. Pro display. Pro perfomance.</h3>
+                <p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link">Learn more</a>
+                <a href="#" class="cta-link">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero milhouse" id="about">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading">MilHouse</h2>
+                <h3 class="title-sub-heading">Just the right amount of everything.</h3>
+                <p class="title-price">From $16.62/mo. or $399 with trade-in.*</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn more</a>
+                <a href="#" class="cta-link cta-link-darker">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero watch">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading-watch"></h2>
+                <h3 class="title-sub-heading">With the new always-On Retina display. <br>
+                You've never seen a watch like this.</h3>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn more</a>
+                <a href="#" class="cta-link cta-link-darker">Buy</a>
+            </div>
+        </div>
+    </section>-->
+
+ 
+    <section class="hero banner">     <!--================ Section 1 ================-->
+        <div class="bannercontainer">
+            <div class="btitle">
+                <h2 class="btitle-bheading">MILHOUSE</h2>
+                <h3 class="btitle-bsub-bheading">Best Armenian Building Company.</h3>
+                <p class="btitle-bprice">From $24.95/mo. or $599 with trade-in.*</p>
+            </div>
+            <div class="bcta">
+                <a href="#" class="bcta-blink">Իմանալ ավելին</a>
+                <!--<a href="#" class="bcta-blink">Buy</a>-->
+            </div>
+            <div class="arrowposition">
+                <div class="arrowbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="bannersec-bannertop">
+            <div class="bannercontent">
+                <h1>MILHOUSE</h1>
+                <a href="#">Sign Up Now</a>
+            </div>
+        </div>-->
+
+    <!-- Swiper --
+<div class="testimonials">    
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <-- Swiper Start --
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide One 1</h3>
+                    </div>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Read More</a>
+                        <span class="card_amsativ"> 17 | 07 | 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide Two 2</h3>
+                    </div>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Read More</a>
+                        <span class="card_amsativ"> 17 | 07 | 2021</span><span class="notactual"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide Tree 3</h3>
+                    </div>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Read More</a>
+                        <span class="card_amsativ"> 17 | 07 | 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide Fore 4</h3>
+                    </div>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Read More</a>
+                        <span class="card_amsativ"> 17 | 07 | 2021</span><span class="notactual"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide Five 5</h3>
+                    </div>
+                    <div class="content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Read More</a>
+                        <span class="card_amsativ"> 17 | 07 | 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <-- Swiper Sliders End --
+
+        </div>
+    </div>
+</div>            
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+</script>-->
+
+    <!-- Swiper Script End -->
+
+    <!-- <div class="textBx">
+        <h2>Hello, I'm<br><span>Albert Hayrapetyan.</span></h2>
+        <h3>I'm a Front End Web Developer.</h3>
+    </div> -->
+
+    </section> <!--================ section 1 prcav ================-->
+
+
+    <section class="about_txt" id="about">
+        <div class="heading">
+            <h2>Մեր Մասին</h2>
+        </div>
+        <div class="contentBx w50">
+            <p><strong class="sg"><span class="sgmillogo">MILHOUSE</span>&nbsp; ՍՊԸ</strong><br> <!-- strong -> h3 -->
+                Ընկերությունը առաջարկում է մատչելի բնակարաններ Երևան քաղաքի տարբեր 
+                վարչական շրջաններում գնորդի համար հասանելի և շահավետ պայմաններով:<br>
+                Մենք ունենք ավելի քան <b style="color:#4f546c">10</b> տարվա փորձ շինարարության ոլորտում, որի 
+                ընթացքում կառուցել և կառուցում ենք ընդհանուր առմամբ 
+                ավելի քան <b style="color:#4f546c">607</b> բնակարան հետևյալ հասցեներում :<br><br>
+            </p>
+        </div>
+    </section>
+
+    <!--================ Table start ================-->
+
+    <section class="buildingstable">
+        <div class="Btable-Bcontainer">
+            <table class="Btable">
+                <thead>
+                    <tr>
+                        <th>N</th>
+                        <th>Հասցե/փողոց</th>
+                        <th>Շենք</th>
+                        <th>Բնակարան</th>
+                        <th>Վիճակ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ftr">
+                        <td data-label="N " class="dtxt ndt">1.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Կոմիտասի պողոտա</td>
+                        <td data-label="Շենք" class="tdtext">49 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">42 բնակարան</td>
+                        <td class="xeloqmna"><p class="status status-handznvace" class="dtxt">Հանձնված է</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">2.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Ավան Ռուբինյանց պողոց</td>
+                        <td data-label="Շենք" class="tdtext">27 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">39 բնակարան</td>
+                        <td><p class="status status-handznvace" class="dtxt">Հանձնված է</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">3.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Նոր Նորք 4-րդ զանգված Թևոսյան</td>
+                        <td data-label="Շենք" class="tdtext">3/1 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">78 բնակարան</td>
+                        <td><p class="status status-handznvace" class="dtxt">Հանձնված է</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">4.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Նոր Նորք 2-րդ զանգված Մոլդովական</td>
+                        <td data-label="Շենք" class="tdtext">43/4 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">100 բնակարան</td>
+                        <td><p class="status status-handznvace" class="dtxt">Հանձնված է</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">5.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">3-րդ Մաս Նիզամի</td>
+                        <td data-label="Շենք" class="tdtext">20/4 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">23 բնակարան</td>
+                        <td><p class="status status-handznvace" class="dtxt">Հանձնված է</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">6.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Նոր Նորք 2-րդ զանգված Մոլդովական</td>
+                        <td data-label="Շենք" class="tdtext">43/3 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">36 բնակարան</td>
+                        <td><p class="status status-avarty" class="dtxt">Ավարտ 30/09/21</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">7.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Ավան 4-րդ փողոց</td>
+                        <td data-label="Շենք" class="tdtext">13/2 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">36 բնակարան</td>
+                        <td><p class="status status-avarty" class="dtxt">Ավարտ 30/09/21</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">8.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Կոմիտասի փողոց</td>
+                        <td data-label="Շենք" class="tdtext">49/12 շենք</td>
+                        <td data-label="Բնակարան" class="tdtext">73 բնակարան</td>
+                        <td><p class="status status-avarty" class="dtxt">Ավարտ 30/09/21</p></td>
+                    </tr>
+        
+                    <tr>
+                        <td data-label="N " class="dtxt ndt">9.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Նոր Նորք 5 - 8-րդ զանգված Մինսկի փողոց</td>
+                        <td data-label="Շենք" class="tdtext">...</td>
+                        <td data-label="Բնակարան" class="tdtext">52 բնակարան</td>
+                        <td><p class="status status-avarty" class="dtxt">Ավարտ 1-ին մասնաշենք 30/08/21</p></td>
+                    </tr>
+        
+                    <tr class="str">
+                        <td data-label="N " class="dtxt ndt">10.</td>
+                        <td data-label="Հասցե/փողոց" class="tdtext">Նոր Նորք 5 - 8-րդ զանգված Մինսկի փողոց</td>
+                        <td data-label="Շենք" class="tdtext">...</td>
+                        <td data-label="Բնակարան" class="tdtext">128 բնակարան</td>
+                        <td><p class="status status-avarty" class="dtxt">Ավարտ 2,3 մասնաշենք 31/12/21</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </section>
+
+    <!--================ Table end ================-->
+
+    <section class="about">
+        <div class="contentB">
+            <div class="contentBx w50">
+                <p><strong class="sg"><span class="sgmillogo">MILHOUSE</span>&nbsp; ՍՊԸ</strong><br><br> <!-- strong -> h3 -->
+                    Ընկերությունը առաջարկում է մատչելի բնակարաններ Երևան քաղաքի տարբեր 
+                    վարչական շրջաններում գնորդի համար հասանելի և շահավետ պայմաններով:<br>
+                    Մենք ունենք ավելի քան 10 տարվա փորձ շինարարության ոլորտում, որի 
+                    ընթացքում կառուցել և կառուցում ենք ընդհանուր առմամբ 
+                    ավելի քան 607 բնակարան հետևյալ հասցեներում :<br><br>
+                    1. &nbsp;Կոմիտասի պողոտա 49 շենք - 42 բնակարան (հանձնված է)<br>
+                    2. &nbsp;Ավան Ռուբինյանց պողոց 27 շենք - 39 բնակարան (հանձնված է)<br>
+                    3. &nbsp;Նոր Նորք 4-րդ զանգված Թևոսյան 3/1 շենք - 78 բնակարան (հանձնված է)<br>
+                    4. &nbsp;Նոր Նորք 2-րդ զանգված Մոլդովական 43/4 շենք - 100 բնակարան (հանձնված է)<br>
+                    5. &nbsp;3-րդ Մաս Նիզամի 20/4 շենք - 23 բնակարան (հանձնված է)<br>
+                    6. &nbsp;Նոր Նորք 2-րդ զանգված Մոլդովական 43/3 շենք - 36 բնակարան (ավարտ 30/09/21)<br>
+                    7. &nbsp;Ավան 4-րդ փողոց 13/2 շենք - 36 բնակարան (ավարտ 30/09/21)<br>
+                    8. &nbsp;Կոմիտասի փողոց 49/12 շենք - 73 բնակարան (ավարտ 30/09/21)<br>
+                    9. &nbsp;Նոր Նորք 5 - 8-րդ զանգված Մինսկի փողոց - 52 բնակարան (ավարտ 1-ին մասնաշենք 30/08/21)<br>
+                    10. &nbsp;Նոր Նորք 5 - 8-րդ զանգված Մինսկի փողոց - 128 բնակարան (ավարտ 2,3 մասնաշենք 31/12/21)<br><br>
+                </p>
+            </div>
+
+            <!-- Mer Tablican -->
+
+            <div class="w50">
+
+                <div id="image-comparison-slider">
+                    <img src="img/mojave-day.jpg" alt="before">
+                    <div class="img-wrapper">
+                      <img src="img/mojave-night.jpg" alt="after">
+                    </div>
+                    <span class="label label-before">Before 01/01/20</span>
+                    <span class="label label-after">After 30/12/21</span>
+                    <div class="handle">
+                      <div class="handle-line"></div>
+                      <div class="handle-circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="handle-line"></div>
+                    </div>
+                </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+                <script src="js/afterbefore.js"></script> <!-- script after before photo -->
+
+            </div>
+        </div>
+    </section> <!--================ section 2 prcav ================-->
+
+
+    <section class="services" id="services">
+        <div class="headings">
+            <h2>Ընթացիք<br>Շինարարություններ</h2>
+            <p><span class="datenumtxt">Նկարները թարմացվել են 30/07/21թ. դրությամբ։</span><br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+        </div>
+
+    <div class="preservices">
+        <div class="sectionblock"> <!-- Mer Sectiony -->
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im1.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im2.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im3.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im4.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im5.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icard">
+                <div class="ibox">
+                    <div class="imgBx">
+                        <img src="img/im6.jpg" alt="">
+                    </div>
+                    <div class="icontentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                industry. Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="mobservice">
+        <div class="mobgrid">
+
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im3.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 1</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im2.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 2</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im3.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 3</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im4.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 4</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im5.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 5</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mobgrid-mobitem">
+                <div class="mobcard">
+                    <img class="mobcard-mobim" src="img/im6.jpg" alt="">
+                    <div class="mobcard-mobcontent">
+                        <h3 class="mobcard-mobhead">Post Title 6</h3>
+                        <p class="mobcard-mobtext">
+                            Lorem Ipsum is simply dummy text of the 
+                            simply dummy text of the printing and 
+                            printing and typesetting industry.
+                        </p>
+                        <button class="mobcard-butn"><b>Visit</b> <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    </section> <!--================ section 3 prcav ================-->
+
+
+    <section class="work" id="work">
+        <div class="headings">
+            <h2>Ազատ<br>Աշխատատեղեր</h2>
+            <p><span class="datenumtxt">Թարմացվել է 30/07/21թ. դրությամբ։</span></p>
+            <p>Մանրամասների համար զանգահարել:<!--, կամ գրել մեր Ֆեյսբուքյան էջին։--></p><br>
+            <p><span class="phnum">Հեռ. +374 44 255 225</span></p>
+        </div>
+
+        <div class="skillcards">
+
+            <div class="col">
+                <div class="skillcard caqua">
+                    <h2>Բանվորներ</h2>
+                    <p>Պահանջվում են բանվորներ շենքեդի ներսում և դրսում, գործարանում բլոկի արտադրման ցեխում աշխատելու համար:</p>
+                    <!--<div class="workcontact">
+                        <div class="workcntspace">
+                            <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                            <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                        </div>
+                        image
+                    </div>-->
+                    <img src="img/milbuilder.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skillcard cred">
+                <h2>Գաջավիկներ</h2>
+                <p>Պահանջվում են գաջավիկներ բնակարանների ներսի պատերի երեսպատման համար:</p>
+                <!--<div class="workcontact">
+                    <div class="workcntspace">
+                        <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                    </div>
+                    image
+                </div>-->
+                <img src="img/milwall.svg" alt="">
+                </div>
+
+                <div class="skillcard corange cor">
+                <h2>Մալյարշիկներ</h2>
+                <p>Պահանջվում են մալյարշիկներ շենքերի մուտքերի և միջանցքների, բնակարանների վերանորոգման համար:</p>
+                <!--<div class="workcontact">
+                    <div class="workcntspace">
+                        <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                    </div>
+                    image
+                </div>-->
+                <img src="img/milroll.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skillcard cred">
+                <h2>Էլեկտրիկներ</h2>
+                <p>Պահանջվում են Էլեկտրիկներ բնակարանի ներսի հոսանքի մոնտաժի և ընդհանուր շենքի հաշվիչների միացման համար:</p>
+                <!--<div class="workcontact">
+                    <div class="workcntspace">
+                        <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                    </div>
+                    image
+                </div>-->
+                <img src="img/icon-karma.svg" alt="">
+                </div>
+
+                <div class="skillcard corange">
+                <h2>Պատշարներ</h2>
+                <p>Պահանջվում են պատշարներ շենքի արտաքին և ներքին պատերի համար:</p>
+                <!--<div class="workcontact">
+                    <div class="workcntspace">
+                        <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                    </div>
+                    image
+                </div>-->
+                <img src="img/milbrick.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skillcard cblue">
+                <h2>Սանտեխնիկներ</h2>
+                <p>Պահանջվում են սանտեխնիկներ շենքերի և բնակարանների ջրամատակարարման և կանալիզացիոն գծերի միացման համար:</p>
+                <!--<div class="workcontact">
+                    <div class="workcntspace">
+                        <span class="card_amsativ"> 17 / 07 / 2021</span><span class="actual"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <p class="wkcnt">Հեռ. +374 44 255 225</p>
+                    </div>
+                    image
+                </div>-->
+                <img src="img/milfaucet.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section> <!--================ section 4 prcav ================-->
+
+    <!--================ section 5 prcav ================-->
+
+    <!-- Web Footer-->
+
+    <footer>
+        <div class="fcontainer">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>It was popularised in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages, and more recently with 
+                    desktop publishing software like Aldus PageMaker including 
+                    versions of Lorem Ipsum.
+                </p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Quck Links</h2>
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Privacy Policu</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Iron</a></li>
+                    <li><a href="">Buildings</a></li>
+                    <li><a href="">Technologis</a></li>
+                    <li><a href="">Other</a></li>
+                    <li><a href="">Watch</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Կոմիտաս 49/12<br>
+                        Երևան, <!--Հայփոստ № 0051,<br>-->Հայաստան</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="#">+374 44 255 225</a><br> <!-- tel:+... # -->
+                           <a href="#"><!--havelyal heraxosahamar--></a></p> <!-- tel:+... # -->
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="#">milhouse.off@gmail.com</a></p> <!-- mailto:+ # -->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copyrghtText">
+        <p>Copyright © 2021 Web Master. All Rights Reserved.</p>
+    </div>
+
+    <!-- Web Loader Script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> <!-- jQuery -->
+    <script src="js/main.js"></script>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 2000);
+    </script>
+
+</body>
+</html>
