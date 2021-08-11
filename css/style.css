@@ -178,7 +178,7 @@ body {
 
 /*================ Milhouse-banner  Section ================*/
 .banner {
-    background: url("/img/imagelarge.png");
+    background: url("https://Mil-House.github.io/working777/img/imagelarge.png");
     margin-top: 4.3rem; /*4.4 rem*/
     background-color: #1b1b1b;
 
@@ -301,23 +301,23 @@ body {
 
 @keyframes slide { /*0%, 33%, 67%*/
     0%{
-        background-image: url("/img/imagelarge.png");
+        background-image: url("https://Mil-House.github.io/working777/img/imagelarge.png");
     }
     25%{
-        background-image: url("/img/imagelarge4.png");
+        background-image: url("https://Mil-House.github.io/working777/img/imagelarge4.png");
     }
     50%{
-        background-image: url("/img/imagelarge5.png");
+        background-image: url("https://Mil-House.github.io/working777/img/imagelarge5.png");
     }
     75%{
-        background-image: url("/img/imagelarge6.png");
+        background-image: url("https://Mil-House.github.io/working777/img/imagelarge6.png");
     }
 }
 
 @media screen and (max-width: 1068px)
 {
     .banner {
-        background: url("/img/iphone_11_pro_medium.jpg");
+        background: url("https://Mil-House.github.io/working777/img/iphone_11_pro_medium.jpg");
     }
 
     .hero {
@@ -354,7 +354,7 @@ body {
 @media screen and (max-width: 735px)
 {
     .banner {
-        background: url("/img/iphone_11_pro_small.jpg");
+        background: url("https://Mil-House.github.io/working777/img/iphone_11_pro_small.jpg");
     }
 
     .hero {
