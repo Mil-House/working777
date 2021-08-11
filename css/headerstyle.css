@@ -170,14 +170,14 @@ header {
     width: 1.6rem;
     height: 4.4rem;
     /*background: url("/img/search.svg") center no-repeat;*/
-    background: url("/img/translate2.png") center no-repeat;
+    background: url("https://Mil-House.github.io/working777/img/translate2.png") center no-repeat;
     cursor: pointer;
 }
 
 .nav-link-bag {
     width: 1.4rem;
     height: 4.4rem;
-    background: url("/img/shop.png") center no-repeat;
+    background: url("https://Mil-House.github.io/working777/img/shop.png") center no-repeat;
     cursor: pointer;
 }
 
@@ -578,7 +578,7 @@ header {
     /*============ Mobile bag Menu (Start) ============*/
 
     .nav-link-bag {
-        background: url("/img/bag.svg") center no-repeat;
+        background: url("https://Mil-House.github.io/working777/img/bag.svg") center no-repeat;
     }
 
     .operation .minibagmenu {
@@ -712,15 +712,15 @@ header {
 @media screen and (max-width: 735px)
 {
     .milhouse-banner {
-        background: url("/img/iphone_11_pro_small.jpg");
+        background: url("https://Mil-House.github.io/working777/img/iphone_11_pro_small.jpg");
     }
 
     .milhouse {
-        background: url("/img/iphone_11_small.jpg");
+        background: url("https://Mil-House.github.io/working777/img/iphone_11_small.jpg");
     }
 
     .watch {
-        background: url("/img/watch_small.jpg");
+        background: url("https://Mil-House.github.io/working777/img/watch_small.jpg");
     }
 }
 
